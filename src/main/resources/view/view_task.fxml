@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="473.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewTaskController">
+   <children>
+      <AnchorPane layoutY="-10.0" prefHeight="483.0" prefWidth="605.0" style="-fx-background-color: #0984e3;">
+         <children>
+            <Pane layoutY="8.0" prefHeight="86.0" prefWidth="614.0" style="-fx-background-color: #dfe6e9;" />
+            <Label layoutX="213.0" layoutY="32.0" prefHeight="38.0" prefWidth="187.0" text="Completed Tasks" textAlignment="CENTER" textFill="#0984e3">
+               <font>
+                  <Font name="Agency FB Bold" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblTasks" layoutX="31.0" layoutY="126.0" prefHeight="273.0" prefWidth="552.0">
+              <columns>
+                <TableColumn fx:id="TaskId" prefWidth="75.0" text="Task Id" />
+                <TableColumn fx:id="colTaskDate" prefWidth="109.60003662109375" text="Task Date" />
+                  <TableColumn fx:id="colTaskTitle" prefWidth="131.99998474121094" text="TaskTitle" />
+                  <TableColumn fx:id="colTaskDesc" minWidth="0.0" prefWidth="232.80001831054688" text="Task Description" />
+              </columns>
+            </TableView>
+            <Pane layoutY="410.0" prefHeight="78.0" prefWidth="614.0" style="-fx-background-color: #dfe6e9;">
+               <children>
+                  <JFXButton layoutX="162.0" layoutY="21.0" onAction="#btnReloadOnAction" prefHeight="37.0" prefWidth="290.0" style="-fx-background-color: #0984e3;" text="ReLoad" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
